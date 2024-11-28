@@ -1,0 +1,94 @@
+.stepper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.stepper-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.step {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step.active .step-number {
+  background-color: #007bff;
+  color: white;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.step-label {
+  font-size: 14px;
+  color: #333;
+}
+
+.stepper-content {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stepper-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.back-btn,
+.continue-btn {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-btn {
+  background-color: #f0f0f0;
+  color: #007bff;
+  border: 1px solid #007bff;
+}
+
+.back-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.continue-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.continue-btn:hover {
+  background-color: #0056b3;
+}
+
+.continue-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.back-btn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}

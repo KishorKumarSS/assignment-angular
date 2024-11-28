@@ -1,0 +1,57 @@
+.form-container {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+input,
+textarea,
+select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.file-upload {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-label {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.file-text {
+  color: #007bff;
+}
+
+textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 10px;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 12px;
+  }
+
+  .form-group {
+    margin-bottom: 10px;
+  }
+}
